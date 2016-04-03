@@ -33,6 +33,24 @@
 
       // get the data point
       p = data.field1;
+      if (data.field1 < 8)
+        document.getElementById("yeastState").innerHTML = "Brrr, its freeezing in here you blithering fool!";
+      else if(data.field1 < 12)
+        document.getElementById("yeastState").innerHTML = "It is a tad bit nippy here!"
+      else if(data.field1 < 14)
+        document.getElementById("yeastState").innerHTML = "A little warmer and you'll be brewing a lager";
+      else if(data.field1 < 18)
+        document.getElementById("yeastState").innerHTML = "It is lager temp! <3";
+      else if(data.field1 < 24)
+        document.getElementById("yeastState").innerHTML = "Wheeee <3 ";
+      else if(data.field1 < 26)
+        document.getElementById("yeastState").innerHTML = "Did someone say global warming? :O";
+      else if(data.field1 < 30)
+        document.getElementById("yeastState").innerHTML = "Global Warming is real! Nuuuuu :(";
+      else if(data.field1 > 30)
+        document.getElementById("yeastState").innerHTML = "I'm a Saison!";
+
+
 
       // if there is a data point display it
       if (p) {
